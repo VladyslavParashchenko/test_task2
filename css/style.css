@@ -176,19 +176,26 @@ header .middle-block {
     height: 545px;
     background-size: cover;
 }
-.doctor-image{
+
+.doctor-image {
     background-image: url('../image/doctor-photo.jpg');
 }
-.opicun-image{
+
+.opicun-image {
     background-image: url('../image/photo-opicun.png');
 }
-.girn-and-grandmother{
+
+.girn-and-grandmother {
     background-image: url('../image/girl_and_grandmother.jpg');
 }
 
 .comments-block {
     color: #0b2a37;
     background: white;
+}
+
+.comments-block h2 {
+    margin-top: 0px;
 }
 
 .comments-block .comments {
@@ -335,6 +342,9 @@ header .middle-block {
     flex-wrap: wrap;
 }
 
+.how-it-work .header-and-btn {
+    text-align: center;
+}
 
 .how-it-work .header-and-btn button {
     background: none;
@@ -430,21 +440,24 @@ footer .logo-media {
     padding-left: 20px;
 }
 
-@media (min-width:481px) {
+.how-it-work .arrow {
+    visibility: hidden;
+}
+
+@media (max-width:481px) and (-webkit-min-device-pixel-ratio: 2) {
     h2 {
         padding: 25px;
     }
-
-    .how-it-work .header-and-btn,
-    .how-it-work .header-and-btn h2 {
+    .how-it-work h2 {
+        font-size: 40px;
+    }
+    .how-it-work .header-and-btn {
         text-align: center;
     }
     .how-it-work .step {
         justify-content: center;
     }
-    .how-it-work .arrow {
-        visibility: hidden;
-    }
+
     .how-it-work .header-and-btn {
         width: 100%;
     }
@@ -473,8 +486,8 @@ footer .logo-media {
     footer div {
         margin-bottom: 20px;
     }
-    
-    .comments-block h2{
+
+    .comments-block h2 {
         margin-top: 0px;
     }
 }
@@ -486,11 +499,22 @@ footer .logo-media {
     footer .info3 {
         margin-left: 20px;
     }
+
+    .how-it-work .step {
+        justify-content: center;
+    }
+    
+    .information-block .btn-for-search-block p{
+        margin-top: 50px;
+    }
 }
 
 @media (min-width:961px) {
     .information-block .btn-for-search-block {
         width: 40%;
+    }
+    .how-it-work h2 {
+        font-size: 80px;
     }
     .information-block .btn-for-search-block p {
         margin-top: 150px;
@@ -516,7 +540,6 @@ footer .logo-media {
         right: 15%;
         top: 75%;
     }
-    .how-it-work .arrow {}
 }
 
 @media (min-width:1025px) {
@@ -524,72 +547,75 @@ footer .logo-media {
         justify-content: center;
     }
     .how-it-work .arrow1 {
-        right:5%;
+        right: 5%;
     }
     .how-it-work .arrow3 {
         right: 5%;
     }
+    .information-block .btn-for-search-block p{
+        margin-top: 200px;
+    }
 }
 
 @media (min-width:1281px) {
-    h2{
+    h2 {
         padding: 50px;
     }
-    .how-it-work .header-and-btn{
+    .how-it-work .header-and-btn {
         width: 40%;
     }
-    .how-it-work .step{
-        margin-bottom: 20px;
+    .how-it-work .step {
+        margin-bottom: 35px;
     }
     .how-it-work .header-and-btn,
     .how-it-work .header-and-btn h2 {
         text-align: left;
+        padding-left: 0px;
     }
-    .how-it-work{
-        padding-bottom: 120px;
+    .how-it-work {
+        padding-bottom: 0px;
         padding-top: 50px;
     }
-    .information-block .information{
+    .information-block .information {
         padding-top: 120px;
         padding-bottom: 100px;
-        
+
     }
-    .information-block{
+    .information-block {
+        padding-bottom: 50px;
+    }
+    .comments-block {
         padding-bottom: 100px;
     }
-    .comments-block{
-        padding-bottom: 100px;
-    }
-    .specialist-type{
+    .specialist-type {
         padding-bottom: 100px;
     }
     .how-it-work .right-step {
         justify-content: flex-end;
         position: relative;
-        left:-5%;
+        left: -5%;
     }
-
     .how-it-work .left-step {
         justify-content: center;
-        
+
     }
-    .how-it-work .arrow1{
-        top:15%;
+    .how-it-work .arrow1 {
+        top: 12%;
         right: 0%;
     }
-    .how-it-work .arrow2{
-        top:37%;
-        
+    .how-it-work .arrow2 {
+        top: 27%;
+
     }
-    .how-it-work .arrow3{
-        top:55%;
-        right:0%;
+    .how-it-work .arrow3 {
+        top: 43%;
+        right: 0%;
     }
-    footer{
+    footer {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-    footer .logo-media{
+    footer .logo-media {
         padding-left: 60px;
     }
 }
