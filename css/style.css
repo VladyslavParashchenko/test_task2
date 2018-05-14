@@ -673,16 +673,17 @@ footer .logo-media {
 
     }
     .how-it-work .arrow1 {
-        top: 15%;
-        right: 0%;
+        top: 11%;
+        right: -40px;
     }
     .how-it-work .arrow2 {
         top: 33%;
+        left:45px;
 
     }
     .how-it-work .arrow3 {
-        top: 51%;
-        right: 0%;
+        top: 57%;
+        right: -50px;
     }
     footer {
         padding-top: 60px;
@@ -691,6 +692,7 @@ footer .logo-media {
     footer .logo-media {
         padding-left: 60px;
     }
+    
     .photo-block{
          height: 545px;
     }
@@ -702,11 +704,10 @@ footer .logo-media {
         margin: auto;
 
     }
+    
+}
+@media (min-width:1700px) {
     .photo-block{
-        width: 1440px;
-        margin: auto;
-    }
-     .sticky{
-        width: 1440px;
+        height: 700px;
     }
 }
