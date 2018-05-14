@@ -6,12 +6,17 @@ window.onload = function () {
 }
 
 function stickyFunction() {
+    var defaultTopScroll = 20;
     header = document.querySelector(".menu-container");
+    headerContent = document.querySelector("header .content");
     sticky = header.offsetTop;
-    if (window.pageYOffset >= document.documentElement.clientHeight) {
+    
+    if (window.pageYOffset >= defaultTopScroll) {
         header.classList.add("sticky");
+        headerContent.classList.add('top-menu-padding');
     } else {
         header.classList.remove("sticky");
+        headerContent.classList.remove('top-menu-padding');
     }
 }
 
