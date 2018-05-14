@@ -704,6 +704,11 @@ footer .logo-media {
         margin: auto;
 
     }
+    .top-menu{
+        width: 1440px;
+        margin: auto;
+    }
+    
     
 }
 @media (min-width:1700px) {
